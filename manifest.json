@@ -1,0 +1,17 @@
+{
+  "name": "Capn Clock",
+  "description": "Time 4chan digits!",
+  "version": "1.1",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "worker.js"
+  },
+  "host_permissions": ["https://boards.4chan.org/*"]
+  ,
+  "web_accessible_resources" : [
+  	{
+  		"resources" : ["*.wav"],
+  		"matches" : ["<all_urls>"]
+  	}
+  ]  	
+}
